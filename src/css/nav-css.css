@@ -1,0 +1,16 @@
+/* 屏幕小于840px 导航栏变动 */
+@media only screen and (max-width: 840px){
+	#nav .info-list{
+		display: none;
+	}
+	#nav .more-nav img{
+		display: inline-block;
+	}
+	
+	#nav .nav-blog{
+		//防止屏幕缩小 元素无法点击, 两步都是必须的
+		display: block;
+		z-index: 1000;
+	}
+	
+}

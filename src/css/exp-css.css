@@ -1,0 +1,214 @@
+
+/*
+ 屏幕小于481px
+*/
+@media only screen and (max-width: 481px){
+	
+	.section4{
+		margin-bottom: 250px;
+	}
+	.exp .date {
+		width:100px;
+		height:100px;
+		line-height: 100px;
+		font-size: 8px;
+		position: absolute;
+		left:10%;
+	}
+	
+	.exp-2::before{
+	   top: -150px;
+	   height:150px;
+	   left: 10%;
+	   margin-left:48px;
+	}
+	.exp-2::after{
+	   content: "";
+	   position: absolute;
+	   top: 100px;
+	   bottom: 0;
+	   height:150px;
+	   left: 10%;
+	   margin-left:48px;
+	   width: 2px;
+	   background-color: rgb(87, 87, 131);
+	}
+	
+	
+	
+	.exp .desc{
+	   /* background-color: #00FF00; */
+	   width: 220px;
+	   font-size: 12px;
+	   left:23%;
+	   text-align: left;
+	   height:150px;
+	   top:100px;
+	   padding:20px;  
+	   
+	}
+	
+	.exp-1 .desc{
+		top:85px;
+		height:180px;
+	}
+	.desc .desc-task{
+	    font-size: 12px;
+	}
+	
+	
+	/* 我的经历 部分进行改动 */
+	 .section5 .work-list{
+		width: 300px;
+		height:200px;
+	 }
+	 
+	 .work-list img{
+		 width: 300px;
+		 height:200px;
+	 }
+	 
+	.section5 .play-auto{
+		width: 300px;
+		height:200px;
+	}
+	
+}
+
+
+
+/**
+ * 屏幕 大于481px  小于 769px
+ */
+@media only screen and (max-width: 769px) and (min-width:481px ) {
+ .section4{
+ 	margin-bottom: 250px;
+ }
+ 
+ .exp .date {
+ 	width:150px;
+ 	height:150px;
+ 	line-height: 150px;
+ 	font-size: 12px;
+ 	position: absolute;
+ 	left:10%;
+ }
+ 
+ .exp-1{
+ 	margin-bottom: 50px;
+
+ }
+ 
+ .exp-2::before{
+    top: -150px;
+    height:150px;
+    left: 10%;
+    margin-left:73px;
+ }
+ 
+ .exp-2::after{
+    content: "";
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    height:150px;
+    left: 10%;
+    margin-left:73px;
+    width: 2px;
+    background-color: rgb(87, 87, 131);
+ }
+ 
+ .exp .desc{
+	 /* background-color: #00FF00; */
+    font-size: 14px;
+    left:25%;
+    text-align: left;
+    height:150px;
+    top:150px;
+    padding:20px;
+	width:300px;
+ }
+ .exp-1 .desc{
+	 height:190px;
+	 top:130px;
+ }
+ 
+ 
+ 
+
+	 
+	 /* 我的作品 部分进行改动 */
+	 .section5 .work-list{
+		width: 400px;
+		height:265px;
+	 }
+	 
+	 .work-list img{
+		 width: 400px;
+		 height:265px;
+	 }
+	 
+	.section5 .play-auto{
+		width:400px;
+		height:265px;
+	}
+	
+}
+
+@media only screen and (max-width: 864px) and (min-width:769px ) {
+	.exp-1 .desc{
+		left:-12%;
+	}
+	.exp-2 .desc{
+		right:1%;
+		width: 300px;
+	}
+}
+
+
+
+/**
+ * 屏幕 大于651px  小于950px
+ */
+@media only screen and (max-width: 988px) and (min-width:864px ) {
+	.exp-1 .desc{
+		left:-5%;
+	}
+	.exp-2 .desc{
+		width: 300px;
+		right:4%;
+	}
+}
+
+
+
+
+/**
+ * 屏幕 大于951px  小于1200px
+ */
+@media only screen and (max-width: 1157px) and (min-width:988px ) {
+	.exp-1 .desc{
+		left:2%;
+	}
+	.exp-2 .desc{
+		right:2%;
+	}
+
+}
+
+/**
+ * 屏幕 大于951px  小于1371px
+ */
+@media only screen and (max-width: 1371px) and (min-width: 1157px ) {
+	.exp-1 .desc{
+		left:9%;
+	}
+	.exp-2 .desc{
+		right:9%;
+	}
+}
+
+
+/* 本机width：1540px */
+
+
