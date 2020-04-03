@@ -1,73 +1,32 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>博客总览</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>博客总览</title>
+		
 	</head>
 	<body>
 		<div id="show-blogs">
 		  <h1>博客总览</h1>
 		  <input type="text" placeholder="搜索" />
 		  <div class="wrapper">
-		  	
+		  	<!-- <div class="single-blog" value="">
+				  <a>
+					  <h2>title</h2>
+				  </a>
+				  <div> content</div>
+		  	</div> -->
 		  </div>
-		  
-		  <!-- <div class="single-blog" value="">
-			  <a>
-				  <h2>title</h2>
-			  </a>
-			  <div> content</div>
-		  </div> -->
 		</div>
-		
-		<script src="../js/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				let wrapper = $(".wrapper");
-				
-				let p1 = new Promise((resolve,reject)=>{
-					$.ajax({
-						method:"get",
-						url:"http://127.0.0.1:8080/showBlogs",
-						success:function(data){
-							resolve(data);
-						},
-						error:function(err){
-							reject(err);
-						}
-					});
-				})
-				
-				p1.then(function(data){
-					let obj = JSON.parse(data);
-					$.addNodes(obj);
-					$(".wrapper").click(function(e){
-						let event = e || window.event;
-						let target = event.target || event.srcElement;
-						let id =$(target).attr("value");
-						console.log(id)
-						window.location.href = "./singleBlog.html?id="+id;
-					})
-				}).catch(function(err){
-					console.log(err);
-				});
-				
-				
-				$.addNodes = function(data){
-					for(let i= 0; i<data.length;i++){
-						let a = $("<a>").append($("<h2>").attr("value",data[i]["id"]).text(data[i]["title"]));
-						let article = $("<article>").text(data[i]["content"]);
-						let div = $("<div>").addClass("single-blog").append(a,article);
-						$(".wrapper").append(div);
-					}
-				}
-			})
+		<script>
+			console.log("showBlogs.js")
 		</script>
-		
+		<script src="../../dist/showBlogs.js"></script>
+
 	</body>
 </html>
 
-<style scoped>
+<style>
 #show-blogs {
   max-width: 800px;
   margin: 0 auto;

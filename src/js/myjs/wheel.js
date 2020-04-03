@@ -1,6 +1,8 @@
-import $ from 'jquery'
-window.$ = $
-window.jQuery = $
+// import $ from 'jquery'
+// window.$ = $
+// window.jQuery = $
+
+const $ = require("jquery");
 
 // 利用jquery来实现 轮播
 $(document).ready(function(){
